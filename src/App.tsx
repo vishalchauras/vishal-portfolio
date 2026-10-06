@@ -49,17 +49,6 @@ const projects = [
     github: "https://github.com/",
     demo: "#contact",
   },
-  {
-    number: "03",
-    title: "Data Analytics Portfolio Project",
-    category: "Analytics",
-    description:
-      "A practical analytics workflow covering data cleaning, exploratory analysis, SQL-style business questions and dashboard-ready insights.",
-    stack: ["Python", "SQL", "Excel", "Power BI"],
-    accent: "blue",
-    github: "https://github.com/",
-    demo: "#contact",
-  },
 ];
 
 const skills = [
