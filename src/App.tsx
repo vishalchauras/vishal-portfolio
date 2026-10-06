@@ -27,14 +27,16 @@ const profile = {
 const projects = [
   {
     number: "01",
-    title: "Real Estate Digital Discovery Platform",
-    category: "Full-stack / Mobile",
+    title: "Online Payment Fraud Detection",
     description:
-      "An Android-first real-estate discovery experience connecting property seekers with owners and brokers through reels, listings, enquiries and lead management.",
-    stack: ["Expo / React Native", "FastAPI", "MongoDB", "REST API"],
-    accent: "gold",
-    github: "https://github.com/",
-    demo: "#contact",
+      "Designed and implemented a supervised machine learning model to detect fraudulent online transactions from transactional data, with a focus on payments and financial-risk analytics.",
+    tech: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+  },
+  {
+    title: "Groco — Online Grocery Store",
+    description:
+      "Developed a responsive front-end e-commerce website with product listings, category filters, and a clean, intuitive user interface.",
+    tech: ["HTML", "CSS", "JavaScript"],
   },
   {
     number: "02",
