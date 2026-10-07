@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import {
   ArrowUpRight,
   BarChart3,
-  BriefcaseBusiness,
   ChevronDown,
   Code2,
   Database,
@@ -12,7 +11,7 @@ import {
   Mail,
   Menu,
   Sparkles,
-  X,
+  X, 
 } from "lucide-react";
 
 const profile = {
@@ -20,7 +19,7 @@ const profile = {
   role: "Data Analyst • Data Engineer • AI Enthusiast",
   tagline: "Turning data, code and ideas into practical digital products.",
   email: "vishalchaurasiya46529@gmail.com",
-  linkedin: "linkedin.com/in/vishal-chaurasiya-345115227",
+  linkedin: "https://linkedin.com/in/vishal-chaurasiya-345115227",
   github: "https://github.com/vishalchauras",
 };
 
@@ -28,26 +27,24 @@ const projects = [
   {
     number: "01",
     title: "Online Payment Fraud Detection",
+    category: "Machine Learning",
     description:
       "Designed and implemented a supervised machine learning model to detect fraudulent online transactions from transactional data, with a focus on payments and financial-risk analytics.",
-    tech: ["Python", "Scikit-learn", "Pandas", "NumPy"],
-  },
-  {
-    title: "Groco — Online Grocery Store",
-    description:
-      "Developed a responsive front-end e-commerce website with product listings, category filters, and a clean, intuitive user interface.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+    accent: "blue",
+    github: "#",
+    demo: "#",
   },
   {
     number: "02",
     title: "Groco — Online Grocery Store",
     category: "Web Development",
     description:
-      "A grocery shopping concept focused on clean product discovery, category browsing and a straightforward customer purchase journey.",
+      "Developed a responsive front-end e-commerce website with product listings, category filters, and a clean, intuitive user interface.",
     stack: ["HTML", "CSS", "JavaScript"],
     accent: "violet",
-    github: "https://github.com/",
-    demo: "#contact",
+    github: "https://github.com/vishalchauras/groco-online-grocery-store",
+    demo: "https://groco-online-grocery-store-qnv3.vercel.app/",
   },
 ];
 
@@ -113,7 +110,7 @@ function App() {
               Learning with <span>purpose.</span>
             </h1>
             <p className="hero-text">
-              I’m Vishal Chaurasiya, an IT graduate focused on data analytics,
+              I’m Vishal Chaurasiya, an IT graduate focused on data analytics,frontend and
               backend fundamentals and AI-driven technology.
             </p>
             <div className="hero-actions">
@@ -221,10 +218,10 @@ function App() {
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                   <div className="tags">{project.stack.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                  <div className="project-links">
-                    <a href={project.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={15} /></a>
-                    <a href={project.demo}>View project <ArrowUpRight size={15} /></a>
-                  </div>
+                 <div className="project-links">
+                  <a href={project.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={15} /></a>
+                  <a href={project.demo} target="_blank" rel="noreferrer">View project <ArrowUpRight size={15} /></a>
+                 </div>
                 </div>
                 <div className="project-art">
                   <div className="mini-dashboard">
